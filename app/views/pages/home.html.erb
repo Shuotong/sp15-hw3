@@ -1,6 +1,16 @@
 <h1>Users</h1>
-<p> <%= @users %> </p>
+<% @users.each do |u|%>
+<p>	<%= u.username %> </p>
+<p> <%= u.email %> </p>
+<%= u.age%> 
+<% end %>
 <h2>Cats</h2>
-<p> <%= @cats %> </p>
+<% @cats.each do |c| %>
+<p> <%= c.name %> </p>
+<p> <%= c.meow%> </p>
+<% end %>
 <h3>Todos</h3>
-<p> <%= @todos %> </p>
+<% @todos.each do |e|%>
+<p> <%= e.tasks %> </p>
+<p> <%= e.finished %> </p>
+<% end %>

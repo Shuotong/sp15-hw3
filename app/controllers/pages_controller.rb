@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   def home
-    @users = User.all.inspect
-    @cats = Cat.all.inspect
-    @todos = Todos.all.inspect
+    @users = User.all
+    @cats = Cat.all
+    @todos = Todos.all
   end
 end
